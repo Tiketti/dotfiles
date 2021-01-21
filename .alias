@@ -1,0 +1,6 @@
+alias d="docker"
+alias dc='docker-compose'
+alias f='fzf'
+alias h='history'
+alias ls="ls -laFGp"
+# alias code='code-insiders'

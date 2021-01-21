@@ -1,0 +1,42 @@
+# Taps
+tap 'homebrew/cask'
+tap 'homebrew/cask-fonts'
+tap 'homebrew/cask-versions'
+tap 'homebrew/bundle'
+
+# Binaries
+brew 'awscli'
+brew 'bash'
+brew 'docker-compose'
+brew 'fzf'
+brew 'gh'
+brew 'git'
+brew 'mackup'
+brew 'mas'
+brew 'tmux'
+brew 'trash'
+brew 'yarn'
+
+# Development
+brew 'nvm'
+brew 'node'
+
+# Apps
+cask '1password'
+cask '1password-cli'
+cask 'aerial'
+cask 'caffeine'
+cask 'docker'
+cask 'dropbox'
+cask 'evernote'
+cask 'firefox'
+cask 'google-chrome-beta'
+cask 'signal'
+cask 'slack'
+cask 'spotify'
+cask 'stay'
+cask 'tableplus'
+cask 'telegram-desktop'
+cask 'visual-studio-code-insiders'
+cask 'vlc'
+cask 'whatsapp'
