@@ -33,6 +33,9 @@ ZSH_CUSTOM=$DOTFILES
 # Stop less from clearing the screen
 export LESS="-Xr"
 
+# make git use simple cat instead of paging
+export GIT_PAGER="cat"
+
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
