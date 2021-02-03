@@ -17,14 +17,12 @@ brew bundle
 # nvm requires some special attention
 mkdir -p ~/.nvm
 
-# Install apps from App Store
-mas install 937984704   # Amphetamine
-mas install 1020812363  # CopyClip 2
-mas install 639968404   # Parcel  
-
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
 rm -rf $HOME/.zshrc
 ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
+
+# Use mas to install apps from the App Store
+source .mas
 
 # Set macOS preferences
 # We will run this last because this will reload the shell
