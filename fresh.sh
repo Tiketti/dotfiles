@@ -25,8 +25,9 @@ rm -rf $HOME/.zshrc
 ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 
 # Install zsh-autosuggestion if not already installed
-if "test ! -d $ZSH/plugins/zsh-autosuggestions" \
-   "run 'git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH/plugins/zsh-autosuggestions'"
+if test ! -d $ZSH/plugins/zsh-autosuggestions; then
+   /bin/bash -c "git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH/plugins/zsh-autosuggestions"
+fi
 
 # Use mas to install apps from the App Store
 source .mas
