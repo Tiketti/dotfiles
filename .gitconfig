@@ -1,0 +1,37 @@
+[user]
+	name = Perttu Haliseva
+	email = perttu@gmail.com
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[core]
+	editor = code --wait
+	excludesfile = /Users/phal/.gitignore_global
+[diff]
+    tool = default-difftool
+[difftool "default-difftool"]
+    cmd = code --wait --diff $LOCAL $REMOTE
+[rebase]
+	autosquash = true
+[pull]
+	ff = only
+[credential]
+	helper = osxkeychain
+[alias]
+	lg = log  --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset' --abbrev-commit --date=relative -n 10
+	s = status
+	co = checkout
+	#
+	# Get the current branch name (not so useful in itself, but used in
+	# other aliases)
+	branch-name = "!git rev-parse --abbrev-ref HEAD"
+	#
+	# Push the current branch to the remote "origin", and set it to track
+	# the upstream branch
+	publish = "!git push -u origin $(git branch-name)"
+[fetch]
+	pruneTags = true
+[init]
+	defaultBranch = main
