@@ -7,6 +7,7 @@ tap 'homebrew/bundle'
 # Binaries
 brew 'awscli'
 brew 'bash'
+brew 'bat'
 brew 'docker-compose'
 brew 'fzf'
 brew 'gh'
