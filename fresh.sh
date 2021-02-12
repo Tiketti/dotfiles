@@ -30,6 +30,7 @@ if test ! -d $ZSH/plugins/zsh-autosuggestions; then
 fi
 
 # Use mas to install apps from the App Store
+# Too bad this doesn't work because you have to manually sign in into App Store...
 source .mas
 
 # Set macOS preferences
