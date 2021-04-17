@@ -3,6 +3,7 @@ mas install 1020812363  # CopyClip 2
 mas install 668208984   # GIPHY Capture
 mas install 1510445899  # Meeter
 mas install 639968404   # Parcel  
+mas install 585829637   # Todoist
 
 echo 'Attempting to install CopyClip 2. If this fails' \
 'install the free version from fliplab.com and enter license key manually.'
