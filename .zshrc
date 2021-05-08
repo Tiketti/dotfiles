@@ -10,6 +10,9 @@ export ZSH=$HOME/.oh-my-zsh
 # Enable completions
 autoload -Uz compinit && compinit
 
+# Enable batch file move
+autoload -U zmv
+
 # auto cd into directory without explicit 'cd'
 setopt autocd autopushd pushdignoredups
 
