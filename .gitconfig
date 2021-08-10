@@ -23,6 +23,7 @@
 	lg = log  --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset' --abbrev-commit --date=relative -n 10
 	s = status
 	co = checkout
+	fo = fetch origin
 	#
 	# Get the current branch name (not so useful in itself, but used in
 	# other aliases)
