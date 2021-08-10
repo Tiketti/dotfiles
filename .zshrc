@@ -66,3 +66,9 @@ export NVM_DIR="$HOME/.nvm"
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/perttu.haliseva@futurice.com/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/perttu.haliseva@futurice.com/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/perttu.haliseva@futurice.com/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/perttu.haliseva@futurice.com/google-cloud-sdk/completion.zsh.inc'; fi
