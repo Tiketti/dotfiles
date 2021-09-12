@@ -29,6 +29,9 @@ if test ! -d $ZSH/plugins/zsh-autosuggestions; then
    /bin/bash -c "git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH/plugins/zsh-autosuggestions"
 fi
 
+# Clone ZSH syntax highlighting - loaded in .zshrc
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
 # Use mas to install apps from the App Store
 # Too bad this doesn't work because you have to manually sign in into App Store...
 source .mas
