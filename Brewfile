@@ -16,6 +16,7 @@ brew 'mackup'
 brew 'mas'
 brew 'tmux'
 brew 'trash'
+brew 'tree'
 brew 'yarn'
 
 # Development
