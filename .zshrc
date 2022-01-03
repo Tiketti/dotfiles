@@ -70,3 +70,5 @@ if [ -f '/Users/perttu.haliseva@futurice.com/google-cloud-sdk/path.zsh.inc' ]; t
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/perttu.haliseva@futurice.com/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/perttu.haliseva@futurice.com/google-cloud-sdk/completion.zsh.inc'; fi
+
+eval "$(direnv hook zsh)"
