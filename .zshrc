@@ -39,6 +39,9 @@ export LESS="-Xr"
 # make git use simple cat instead of paging
 export GIT_PAGER="cat"
 
+# use bat as colorizing pager for man
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
