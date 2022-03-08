@@ -6,3 +6,6 @@ alias ls="ls -laFGp"
 alias pt="papertrail"
 alias tf="terraform"
 # alias code='code-insiders'
+
+# Open files with these extensions in VS Code
+alias -s {json,md,js,ts,html}=code
