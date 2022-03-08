@@ -75,3 +75,7 @@ if [ -f '/Users/perttu.haliseva@futurice.com/google-cloud-sdk/path.zsh.inc' ]; t
 if [ -f '/Users/perttu.haliseva@futurice.com/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/perttu.haliseva@futurice.com/google-cloud-sdk/completion.zsh.inc'; fi
 
 eval "$(direnv hook zsh)"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
