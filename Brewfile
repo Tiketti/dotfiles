@@ -5,6 +5,7 @@ tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
 
 # Binaries
+brew 'act'
 brew 'awscli'
 brew 'bash'
 brew 'bat'
@@ -15,14 +16,13 @@ brew 'gh'
 brew 'git'
 brew 'mackup'
 brew 'mas'
+brew 'node'
+brew 'nvm'
 brew 'tmux'
 brew 'trash'
 brew 'tree'
 brew 'yarn'
 
-# Development
-brew 'nvm'
-brew 'node'
 
 # Apps
 cask '1password'
