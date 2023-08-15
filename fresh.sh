@@ -9,6 +9,10 @@ if test ! $(which brew); then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
 
+# Add brew to path
+(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/perttu/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # Update Homebrew recipes
 brew update
 
