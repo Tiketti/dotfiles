@@ -4,10 +4,6 @@ export DOTFILES=$HOME/.dotfiles
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-path+='/Users/perttu.haliseva@futurice.com/.cargo/bin'
-# export to sub-processes 
-export PATH
-
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
@@ -51,7 +47,7 @@ export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(fzf git npm tmux wd yarn zsh-nvm zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(fzf git npm wd yarn zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -68,19 +64,9 @@ source $DOTFILES/.alias
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/perttu.haliseva@futurice.com/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/perttu.haliseva@futurice.com/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/perttu.haliseva@futurice.com/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/perttu.haliseva@futurice.com/google-cloud-sdk/completion.zsh.inc'; fi
-
-
-eval "$(direnv hook zsh)"
+# The line below causes "command not found: direnv" error. Disable for now and revisit if this is even needed.
+# eval "$(direnv hook zsh)"
 eval "$(/opt/homebrew/bin/brew shellenv)"
-
-# THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 export PATH="/usr/local/sbin:$PATH"
 
