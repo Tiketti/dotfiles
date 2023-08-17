@@ -51,6 +51,11 @@ plugins=(fzf git npm wd yarn zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
+# Enable Git commit signing with GPG
+# https://github.com/Homebrew/homebrew-core/issues/14737#issuecomment-309848851
+GPG_TTY=$(tty)
+export GPG_TTY
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
