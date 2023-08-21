@@ -3,7 +3,7 @@ alias dc='docker-compose'
 alias f='fzf'
 alias h='history'
 alias ls="ls -laFGp"
-alias pt="papertrail"
+alias p="pnpm"
 alias tf="terraform"
 alias code='code-insiders'
 
