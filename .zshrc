@@ -70,7 +70,7 @@ source $DOTFILES/.alias
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # The line below causes "command not found: direnv" error. Disable for now and revisit if this is even needed.
-# eval "$(direnv hook zsh)"
+eval "$(direnv hook zsh)"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 export PATH="/usr/local/sbin:$PATH"
