@@ -1,11 +1,15 @@
+alias code='code-insiders'
 alias d="docker"
 alias dc='docker-compose'
 alias f='fzf'
 alias h='history'
 alias ls="ls -laFGp"
 alias p="pnpm"
+alias pc='podman-compose'
+alias p="pnpm"
+alias px="pnpx"
+alias pod='podman'
 alias tf="terraform"
-alias code='code-insiders'
 
 # Open files with these extensions in VS Code
 alias -s {json,md,js,ts,html}=code
