@@ -69,11 +69,15 @@ source $DOTFILES/.alias
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-# The line below causes "command not found: direnv" error. Disable for now and revisit if this is even needed.
-eval "$(direnv hook zsh)"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 export PATH="/usr/local/sbin:$PATH"
 
 # Use .nvmrc file when cd'ing into a directory
 eval "$(fnm env --use-on-cd)"
+
+eval "$(direnv hook zsh)"
+
+# tabtab source for packages
+# uninstall by removing these lines
+[[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]] && . ~/.config/tabtab/zsh/__tabtab.zsh || true
