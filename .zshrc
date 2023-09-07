@@ -73,6 +73,14 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 export PATH="/usr/local/sbin:$PATH"
 
+# pnpm
+export PNPM_HOME="/Users/perttu/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
 # Use .nvmrc file when cd'ing into a directory
 eval "$(fnm env --use-on-cd)"
 
