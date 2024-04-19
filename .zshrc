@@ -8,10 +8,13 @@ export DOTFILES=$HOME/.dotfiles
 export ZSH=$HOME/.oh-my-zsh
 
 # Enable completions
-autoload -Uz compinit && compinit
+autoload -U +X compinit && compinit
+autoload -U +X bashcompinit && bashcompinit 
 
 # Enable batch file move
 autoload -U zmv
+
+complete -C '/opt/homebrew/bin/aws_completer' aws
 
 # auto cd into directory without explicit 'cd'
 setopt autocd autopushd pushdignoredups
