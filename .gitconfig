@@ -1,6 +1,7 @@
 [user]
 	name = Perttu Haliseva
 	email = perttu@gmail.com
+	signingkey = A91CEAE9
 [filter "lfs"]
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
@@ -24,6 +25,7 @@
 	s = status
 	co = checkout
 	fo = fetch origin
+	sm = switch main
 	#
 	# Get the current branch name (not so useful in itself, but used in
 	# other aliases)
