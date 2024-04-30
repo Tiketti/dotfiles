@@ -84,6 +84,9 @@ case ":$PATH:" in
 esac
 # pnpm end
 
+# Set python startup file
+export PYTHONSTARTUP=~/.dotfiles/.pythonstartup
+
 # Use .nvmrc file when cd'ing into a directory
 eval "$(fnm env --use-on-cd)"
 

@@ -8,7 +8,10 @@ alias p="pnpm"
 alias pc='podman-compose'
 alias p="pnpm"
 alias px="pnpx"
+alias pip="pip3"
 alias pod='podman'
+alias py='python3'
+alias python='python3'
 alias tf="terraform"
 
 # Open files with these extensions in VS Code
