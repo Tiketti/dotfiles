@@ -9,7 +9,7 @@
 	clean = git-lfs clean -- %f
 [core]
 	editor = code-insiders --wait
-	excludesfile = /Users/phal/.gitignore_global
+	excludesfile = /Users/perttu/.dotfiles/.gitignore_global
 [diff]
     tool = default-difftool
 [difftool "default-difftool"]
