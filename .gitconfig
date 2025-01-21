@@ -1,7 +1,7 @@
 [user]
 	name = Perttu Haliseva
 	email = perttu@gmail.com
-	signingkey = A91CEAE9
+	signingkey = 52344196A91CEAE9
 [filter "lfs"]
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
@@ -42,3 +42,6 @@
 	gpgsign = true
 [gpg]
 	program = /opt/homebrew/bin/gpg
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+

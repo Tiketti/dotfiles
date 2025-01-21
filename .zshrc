@@ -76,6 +76,9 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 export PATH="/usr/local/sbin:$PATH"
 
+# Add Docker
+export PATH="$PATH:/Applications/Docker.app/Contents/Resources/bin/"
+
 # pnpm
 export PNPM_HOME="/Users/perttu/Library/pnpm"
 case ":$PATH:" in
@@ -88,7 +91,7 @@ esac
 export PYTHONSTARTUP=~/.dotfiles/.pythonstartup
 
 # Use .nvmrc file when cd'ing into a directory
-eval "$(fnm env --use-on-cd)"
+eval "$(fnm env --use-on-cd --resolve-engines)"
 
 eval "$(direnv hook zsh)"
 
